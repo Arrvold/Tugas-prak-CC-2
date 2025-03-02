@@ -26,7 +26,7 @@ const UserList = () => {
     return (
         <div className="columns mt-5 is-centered">
             <div className="column is-half">
-                <Link to={`add`} className='button is-success'>Tambah Data</Link>
+                <Link to={`add`} className='button is-success'>Tambah Notes</Link>
                 <table className='table is-striped is-fullwidth'>
                     <thead>
                         <tr>
