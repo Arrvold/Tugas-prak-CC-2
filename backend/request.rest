@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+
+###
+POST http://localhost:5000/add-users
+Content-Type: application/json
+
+{
+    "name": "Joni",
+    "email": "jo@gmail.com",
+    "title": "Cihuy",
+    "text": "Apasi jir",
+    "date": "2025-03-01"
+}
+
+###
+PUT http://localhost:5000/user/2
+Content-Type: application/json
+
+{
+    "name": "Ahmad",
+    "email": "jo@gmail.com",
+    "title": "Hari pertama praktikum",
+    "text": "Hari pertama praktikum, semoga lancar",
+    "date": "2025-03-01"
+}
+
+###
+DELETE http://localhost:5000/user/2
