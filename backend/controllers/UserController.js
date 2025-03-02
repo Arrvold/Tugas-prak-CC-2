@@ -29,7 +29,7 @@ async function createUser(req, res) {
   try {
     const inputResult = req.body;
     await User.create(inputResult);
-    res.status(201).json({ msg: "User Created" });
+    res.status(201).json({ msg: "Notes Created" });
   } catch (error) {
     console.log(error.message);
   }
@@ -45,7 +45,7 @@ export const updateUser = async (req, res) => {
         id: req.params.id
       }
     });
-    res.status(200).json({ msg: "User Updated" });
+    res.status(200).json({ msg: "Notes Updated" });
   }
   catch (error) {
     console.log(error.message);
@@ -60,9 +60,9 @@ export const deleteUser = async (req, res) => {
       }
     });
     if (result === 0) {
-      res.status(404).json({ msg: "User Not Found" });
+      res.status(404).json({ msg: "Notes Not Found" });
     } else {
-      res.status(200).json({ msg: "User Deleted" });
+      res.status(200).json({ msg: "Notes Deleted" });
     }
   }
   catch (error) {
