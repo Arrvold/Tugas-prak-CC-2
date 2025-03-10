@@ -1,7 +1,19 @@
-GET http://localhost:5000/users
+GET http://35.225.144.134/users
 
 ###
 POST http://localhost:5000/add-users
+Content-Type: application/json
+
+{
+    "name": "Joni",
+    "email": "jo@gmail.com",
+    "title": "Cihuy",
+    "text": "Apasi jir",
+    "date": "2025-03-01"
+}
+
+###
+GET http://localhost:5000/users/6
 Content-Type: application/json
 
 {
@@ -17,8 +29,8 @@ PUT http://localhost:5000/user/2
 Content-Type: application/json
 
 {
-    "name": "Ahmad",
-    "email": "jo@gmail.com",
+    "name": "Jonathan",
+    "email": "jonathan@gmail.com",
     "title": "Hari pertama praktikum",
     "text": "Hari pertama praktikum, semoga lancar",
     "date": "2025-03-01"
